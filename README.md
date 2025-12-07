@@ -2,9 +2,17 @@
 
 **This project aims to implement CNN for the purpose of helping and serving the climbing industry and more specifically Routesetting.** 
 
+## 🎯 Main Focus: YOLO-seg Implementation
+
+**This repository primarily invites visitors to check out my Google Colab notebook where I implemented and trained a YOLO-seg model for wall segmentation.**
+
+👉 **[View the Google Colab Notebook](https://colab.research.google.com/drive/1aJrK4Oq5pOiNV55UMiHeFBmcTMs96zxa?usp=sharing)**
+
+![image of results after fine tuning YOLO-seg model](https://filedn.eu/lqAABNUSgVkfRyevTm4sSpR/bordel/yolo_trained_results.png)
+
 ## Description
 
-The project for now focuses more on detecting where the wall is in a picture and recognising easy patterns.
+The project focuses on detecting where the wall is in a picture and recognising easy patterns.
 
 - Wall segmentation
 - Overhang angle prediction
@@ -13,13 +21,9 @@ The project for now focuses more on detecting where the wall is in a picture and
 
   *(07/12/2025 Update: From my point of view, in order to extract and analyse accurate and exploitable data for climbing purposes, a single 2D image is too hard to extract accurate data from. Exploiting 3D photogrammetry / LIDAR scans are the future in this research)*
 
-## Better results have been found using YOLO
+## Annotation Tool
 
-![image of results after fine tuning YOLO-seg model](https://filedn.eu/lqAABNUSgVkfRyevTm4sSpR/bordel/yolo_trained_results.png)
-
-To use YOLO, I had to adapt the format of all my annotations and dataset to the YOLO required format.
-Example can be found here :
-https://colab.research.google.com/drive/1aJrK4Oq5pOiNV55UMiHeFBmcTMs96zxa?usp=sharing
+To train the YOLO-seg model, I needed to annotate a sufficient number of images. **In the `annotations` branch, you can find the annotation tool I created** to annotate images for training the YOLO-seg model.
 
 
 ## Installation
@@ -33,6 +37,14 @@ pip  install  -r  requirements.txt
 
 ## Usage
 
+### Annotation Tool (annotations branch)
+
+To use the annotation tool, checkout the `annotations` branch:
+
+```bash
+git checkout annotations
+```
+
 ### 1. Data Preparation
 
 To prepare a new dataset:
@@ -45,6 +57,7 @@ To prepare a new dataset:
 ```bash
 python  tools/wall_annotator/annotator.py  dataset1
 ```
+
 The tool allows you to:
 
 - Annotate walls with polygons
