@@ -2,11 +2,9 @@
 
 **This project aims to implement CNN for the purpose of helping and serving the climbing industry and more specifically Routesetting.** 
 
-## 🎯 Main Focus: YOLO-seg Implementation
+## Main Focus: YOLO-seg Implementation
 
-**This repository primarily invites visitors to check out my Google Colab notebook where I implemented and trained a YOLO-seg model for wall segmentation.**
-
-👉 **[View the Google Colab Notebook](https://colab.research.google.com/drive/1aJrK4Oq5pOiNV55UMiHeFBmcTMs96zxa?usp=sharing)**
+👉 **[View the Google Colab Notebook https://colab.research.google.com/drive/1aJrK4Oq5pOiNV55UMiHeFBmcTMs96zxa?usp=sharing](https://colab.research.google.com/drive/1aJrK4Oq5pOiNV55UMiHeFBmcTMs96zxa?usp=sharing)**
 
 ![image of results after fine tuning YOLO-seg model](https://filedn.eu/lqAABNUSgVkfRyevTm4sSpR/bordel/yolo_trained_results.png)
 
