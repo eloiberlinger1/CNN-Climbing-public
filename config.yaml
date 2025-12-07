@@ -1,6 +1,0 @@
-# Configuration de l'entraînement
-training:
-  batch_size: 32
-  learning_rate: 0.001
-  epochs: 10
-  device: "cpu"  # ou "cuda"
